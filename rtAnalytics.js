@@ -79,3 +79,9 @@ gapi.load("client:auth2", function () {
 
     document.querySelector("#execute").addEventListener("click", execute);
 })();
+
+(function () {
+    setTimeout(() => {
+        document.querySelector("#auth_load").click();
+    });
+})();
