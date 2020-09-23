@@ -1,0 +1,23 @@
+{
+    "name": "real_time_users_alert",
+    "version": "1.0.0",
+    "description": "Alert users when real time users number drop below certain limits",
+    "main": "server.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "dev": "npx nodemon server.js"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "cors": "^2.8.5",
+        "dotenv": "^8.2.0",
+        "express": "^4.17.1",
+        "g": "^2.0.1",
+        "google-auth-library": "^6.1.0",
+        "morgan": "^1.10.0",
+        "node-fetch": "^2.6.1",
+        "nodemailer": "^6.4.11",
+        "nodemon": "^2.0.4"
+    }
+}
