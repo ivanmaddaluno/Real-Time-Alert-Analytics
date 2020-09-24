@@ -13,11 +13,11 @@ app.use(express.json());
 app.use(cors());
 
 app.get("/", (req, res) => {
-    res.sendFile(__dirname + "/index.html");
+    res.sendFile(__dirname + "/client/index.html");
 });
 
 app.get("/rtAnalytics.js", (req, res) => {
-    res.sendFile(path.join(__dirname + "/rtAnalytics.js"));
+    res.sendFile(path.join(__dirname + "/client/rtAnalytics.js"));
 });
 
 app.use("/sendToMe", sendToMe);

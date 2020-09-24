@@ -3,8 +3,6 @@ const sendToMeRouter = express.Router();
 const nodemailer = require("nodemailer");
 require("dotenv").config();
 
-console.log("from Router");
-
 const transport = {
     host: "smtp.gmail.com",
     port: 587,
@@ -20,8 +18,7 @@ transporter.verify((error, success) => {
     if (error) {
         console.error(error);
     } else {
-        //Success
-        console.log("users ready to mail myself");
+        console.log("users ready to mail");
     }
 });
 
@@ -32,14 +29,14 @@ sendToMeRouter.post("/", (req, res, next) => {
         to: "ivan.maddaluno@scout24.com",
         subject: req.body.subject,
         text: `
-      from:
-      ${req.body.name} 
+from:
+${req.body.name} 
 
-      contact: ${req.body.email}
+contact: ${req.body.email}
 
-      message: 
+message: 
 
-      ${req.body.text}`,
+${req.body.text}`,
     };
     transporter.sendMail(mail, (err, data) => {
         if (err) {
