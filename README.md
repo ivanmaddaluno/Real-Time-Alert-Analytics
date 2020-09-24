@@ -11,7 +11,7 @@
         Send attachment with more details
     </li>
      <li>
-        Set up a different minimum number for each scan of the users to have useful email <br>
+        Set up a different minimum number of the users for each scan to have useful Alert <br>
         E.G. 13:00 - 10000 users / 18:00 - 9000 and so on
     </li>
 </ul>
